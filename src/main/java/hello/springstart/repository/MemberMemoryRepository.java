@@ -5,10 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public class MemoryMemberRepository implements MemberRepository {
+// @Repository
+public class MemberMemoryRepository implements MemberRepository {
     private static ConcurrentHashMap<Long, Member> store = new ConcurrentHashMap<>();
     private static long sequence = 0L;
 

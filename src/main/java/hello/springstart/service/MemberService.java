@@ -2,6 +2,7 @@ package hello.springstart.service;
 
 import hello.springstart.domain.Member;
 import hello.springstart.repository.MemberRepository;
+import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
 public class MemberService {
     private final MemberRepository memberRepository;
 
+    @Transactional
     public Long join(Member member) {
         validateDuplicatedMemberByName(member);
         memberRepository.save(member);

@@ -8,8 +8,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MemoryMemberRepositoryTest {
-    MemoryMemberRepository repository = new MemoryMemberRepository();
+public class MemberMemoryRepositoryTest {
+    MemberMemoryRepository repository = new MemberMemoryRepository();
 
     @AfterEach
     public void afterEach() {

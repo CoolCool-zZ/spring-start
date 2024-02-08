@@ -4,18 +4,18 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 import hello.springstart.domain.Member;
-import hello.springstart.repository.MemoryMemberRepository;
+import hello.springstart.repository.MemberMemoryRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class MemberServiceTest {
     private MemberService memberService;
-    private MemoryMemberRepository memberRepository;
+    private MemberMemoryRepository memberRepository;
 
     @BeforeEach
     void beforeEach() {
-        memberRepository = new MemoryMemberRepository();
+        memberRepository = new MemberMemoryRepository();
         memberService = new MemberService(memberRepository);
     }
 
