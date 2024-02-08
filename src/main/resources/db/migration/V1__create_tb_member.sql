@@ -1,0 +1,5 @@
+CREATE TABLE tb_member(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(20) NOT NULL,
+    PRIMARY KEY(id)
+);
